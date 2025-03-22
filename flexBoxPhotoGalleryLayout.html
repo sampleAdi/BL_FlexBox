@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Gallery Layout</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .cards img {
+            border: 3px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 25vw;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .cards img {
+                max-width: 45vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cards img {
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cards">
+        <img src="photo1.jpg" alt="Gallery photo 1 - Nature">
+        <img src="photo2.jpg" alt="Gallery photo 2 - Cityscape">
+        <img src="photo3.jpg" alt="Gallery photo 3 - Sunset">
+        <img src="photo4.jpg" alt="Gallery photo 4 - Mountain view">
+        <img src="photo5.jpg" alt="Gallery photo 5 - Beach">
+        <img src="photo6.jpg" alt="Gallery photo 6 - Forest">
+    </main>
+</body>
+
+</html>
